@@ -8,78 +8,116 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="project2.html">
+    <style>
+        body {
+            overflow-x: hidden;
+          }
+          .sidebar {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+          }
+          .sidebar .nav-link {
+            color: #333;
+            padding: 10px 15px;
+          }
+          .nav-link{
+            color: white;
+          }
+          .sidebar .nav-link:hover {
+            background-color: black;
+          }
+          .sidebar .nav-link.active {
+            background-color: #0d6efd;
+            color: white;
+          }
+          .main-content {
+            padding: 20px;
+          }
+    </style>
 
 </head>
 
 <body>
-    <link rel="stylesheet" href="project2.html">
-    <nav class="navbar bg-white navbar expand-ms">
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="projet.html" class="nav-link" text-primary>Home</a>
-            </li>
-            <li class="nav-item">
 
-                <a href="project2.html" class="nav-link">product</a>
-            </li>
-            <li class="nav-item">
-                <a href="about as.html" class="nav-link">About as</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">contact</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="bg-primary text-white ">
-        <h1><i>Welcome to agape market</i></h1>
-        <p>we provide all goog fro the client</p ">
-        <img src=" download (9).jpg" alt">
-        <img src="download (8).jpg" alt="">
-        <img src="download (10).jpg" alt="">
-        <img src="OIP (10).jpg" alt="">
-        <img src="OIP (2) - Copy.jpt alt="">
-    <img src=" OIP.jpg" alt="">
-        <img src="download (2).jpg" alt="">
-        <img src="OIP.jpg" alt="">
-        <img src="OIP (5).jpg" alt="">
-        <img src="download (1).jpg" alt="">
-        <img src="download (10).jpg" alt="">
-    </div>
-    <div class="row bg-warning p-3">
-        <div class="col-lg-4">
-            <h1>About as</h1>
-            <p>we are dedicated to provide exption</p>
-            <p>and product to our cliet worl wide</p>
-
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 bg-dark text-white sidebar p-0">
+              <div class="d-flex flex-column h-100">
+                <div class="p-3">
+                  <h5>AGAPE MARKET</h5>
+                </div>
+                <ul class="nav flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="projet.html" class="nav-link text-white" text-primary>Home</a>
+                    </li>
+                    <li class="nav-item">
+        
+                        <a href="project2.html" class="nav-link text-white">product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about as.html" class="nav-link text-white">About as</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-white">contact</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Main Content -->
+            <div class="col-md-9 col-lg-10 main-content">
+                <div class="bg-primary text-white ">
+                    <h1><i>Welcome to agape market</i></h1>
+                    <p>we provide all goog fro the client</p ">
+                    <img src=" download (9).jpg" alt">
+                    <img src="download (8).jpg" alt="">
+                    <img src="download (10).jpg" alt="">
+                    <img src="OIP (10).jpg" alt="">
+                    <img src="OIP (2) - Copy.jpt alt="">
+                <img src=" OIP.jpg" alt="">
+                    <img src="download (2).jpg" alt="">
+                    <img src="OIP.jpg" alt="">
+                    <img src="OIP (5).jpg" alt="">
+                    <img src="download (1).jpg" alt="">
+                    <img src="download (10).jpg" alt="">
+                </div>
+                <div class="row mt-5 bg-warning p-3">
+                    <div class="col-lg-4">
+                        <h1>About as</h1>
+                        <p>we are dedicated to provide exption</p>
+                        <p>and product to our cliet worl wide</p>
+            
+                    </div>
+            
+                    <div class="col-lg-4">
+                        <h2>quick of link</h2>
+                        <ul>
+                            <li>
+                                <a href="home" class="nav-link text-white" text-primary>Home</a>
+                            </li>
+                            <li class="nav-item text-white">
+            
+                                <a href="product" class="nav-link text-white">product</a>
+                            </li>
+                            <li>
+                                <a href="about as " class="nav-link text-white">About as</a>
+                            </li>
+                   
+                            <li>
+                                <a href="contact" class="nav-link text-white">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>contact information</h2>
+                        <p>email:kevinetuyishimire77@gmail.</p>
+            
+                    </div>
+            
+            </div>
+          </div>
         </div>
-
-        <div class="col-lg-4">
-            <h2>quick of link</h2>
-            <ul>
-                <li>
-                    <a href="home" class="nav-link" text-primary>Home</a>
-                </li>
-                <li class="nav-item">
-
-                    <a href="product" class="nav-link">product</a>
-                </li>
-                <li>
-                    <a href="about as" class="nav-link">About as</a>
-                </li>
-       
-                <li>
-                    <a href="contact" class="nav-link">contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-lg-4">
-            <h2>contact information</h2>
-            <p>email:kevinetuyishimire77@gmail.</p>
-
-        </div>
-
-        </nav>
-
 </body>
 
 </html>
