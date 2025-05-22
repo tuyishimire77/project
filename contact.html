@@ -31,13 +31,46 @@
             </li>
         </ul>
     </nav>
-    <div class="bg-primary">
+    <div style="background-color: chartreuse;margin-left: 20px;margin-right: 15px;">
 
-        
-        <h1>Infomation of conact</h1>
-        <h1> This lacation</h1>
-        <img src="new_ecc_banner4-1024x465.jpg" alt="" style="width: 400px;height: 400px;">
-        <div class="row bg-warning p-3">
+
+        ,<marquee>
+            <h1>Infomation of conact</h1>
+        </marquee>
+        <h1> This lacation of agape markert
+        </h1>
+        <img src="new_ecc_banner4-1024x465.jpg" alt="" style="width: 600px;height: 400px;">
+        <img src="download (4).jpg" alt="" style="width: 600px;height: 400px;">
+<form onsubmit="return validateForm()">
+    <label for="">You name</label>
+  <input type="text" id="name" placeholder="Your Name" required /><br><br>
+  <label>Email</label>
+  <input type="email" id="email" placeholder="Your Email" required /><br><br>
+  <Label>Message</Label>
+  <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+  <button type="submit" style="border-radius: 20px;">Send</button>
+</form>
+        <script>
+  function validateForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill out all fields.");
+      return false;
+    }
+
+    if (!email.includes("@")) {
+      alert("Enter a valid email address.");
+      return false;
+    }
+
+    return true;
+  }
+</script>
+
+        <div class="row bg-warning" style="margin-top: 30px;margin-left: 20px;">
             <div class="col-lg-4">
                 <h1>About as</h1>
                 <p>we are dedicated to provide exption</p>
@@ -64,7 +97,9 @@
                 </ul>
             </div>
             <div class="col-lg-4">
-                <h2>contact information</h2>
+                <h2>Contact information</h2>
+                <p>District:Gatsibo</p>
+                <p>Sector:Kiramuruzi</p>
                 <p>email:kevine tuyishimire77@gmail.com</p>
                 <p>tell:(+250)786523730</p>
 

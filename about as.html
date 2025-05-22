@@ -41,6 +41,27 @@
             <label>Email</label>
             <input type="email"><br><br>
             <button class="btn btn-30 bg-primary">Send data</button>
+            </form>
+            <script>
+                function validateForm() {
+                    const name = document.getElementById("name").value.trim();
+                    const email = document.getElementById("email").value.trim();
+                    const message = document.getElementById("message").value.trim();
+
+                    if (!name || !email || !message) {
+                        alert("Please fill out all fields.");
+                        return false;
+                    }
+
+                    if (!email.includes("@")) {
+                        alert("Enter a valid email address.");
+                        return false;
+                    }
+
+                    return true;
+                }
+            </script>
+
 
         </div><br><br>
         <div class="col-lg-6">
@@ -59,11 +80,16 @@
                     <td>6:00-7:00 A.M</td>
                 </tr>
                 <TD>Work </TD>
-                <td>12:00</td>
+                <td>7:00-12:00A.M</td>
                 </tr>
                 <tr>
                     <td>luanch</td>
-                    <td>7:00-17:00pm</td>
+                    <td>12:00-13:00pm</td>
+                </tr>
+                <tr>
+                    <TD>Work</TD>
+                    <td>13:00-17:00pm</td>
+                </tr>
             </table>
         </div>
     </div>
@@ -95,6 +121,8 @@
         </div>
         <div class="col-lg-4">
             <h2>contact information</h2>
+            <p>District:Gatsibo</p>
+            <p>Sector:Kiramuruzi</p>
             <p>email:kevine tuyishimire77@gmail.com</p>
             <p>tell:(+250)786523730</p>
 
