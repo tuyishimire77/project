@@ -34,42 +34,92 @@
         <center>
           <marquee><h1><u><i>OUR PRODUCT</i></u></h1></marquee>
         </center>
-        <h1>FRESH ORGANIC FOOD</h1>
-        <h2>This fruit</h2>
-        <h3>Farm-to-table produce natural product,and more</h3>
-        <h4>Fruit are crucial fro aheath lifestyle offring wide range of benefit from boosting the immune system </h4>
-        <h4>to aidind digestion and reducing therisk of desiases</h4>
-        <img src="foods-that-start-with-a-z-768x576.jpg" alt="" style="height: 250px;width: 250px;">
-        <img src="download (12).jpg" alt="" style="height: 250px;width: 250px;">
-        <img src="download (11).jpg" alt="" style="width: 300px;width: 300px;">
-        <img src="download (13).jpg" alt="" style="width: 250px;width: 250px;">
-        <img src="download (14).jpg" alt="" style="width: 250px;width: 250px;">
-        <h1>organic milk</h1>
-        <h1>Locally sourced organic dairy milk</h1>
-        <h1>Featured product</h1>
-        <h4>This the natural food and sweet or crunchy organic apples</h4>
-        <h4>and banana for ripe or nutritious banana </h4>
-        <h4>this product</h4>
-        <h1>THIS IS VEGETABLES</h1>
-        <H2>This is A-Z vegetabes is comprehensive guide full of infomation on auide range of vegetabes</h2>
-        <h2>from the common to the lesser-know varietiess this guide cover every thinge from nutrient</h2>
-        <h2>in each vegetable to om to sellect store and prapare them</h2>
-        <h3>this guide whether youre aseason chef or aovice cook, this guide is valuable reasouce</h3>
-        <h3>for any one looking to incoraprate vegetabes.</h3>
-        <h3>into their diet so wether your looking to lean more about familiar vegetabes like broccoli and
-        </h3>
-        <h3>carrots or curious about more axotic varietie like kohlrobi and celeriac</h3>
-        <h3> this is food is agood of protein</h3>
-        <h3>THEfood is good of body from the consumer protein</h3>
-        <h3>This is local product</h3>
-        <h3>this food is the substance which contien vitamin and protein</h3>
+        <main>
+    <section class="products-section">
+      <h2>Our Organic Products</h2>
 
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('fruits')">Fruits</button>
+        <button onclick="filterProducts('vegetables')">Vegetables</button>
+        <button onclick="filterProducts('dairy')">Dairy</button>
+      </div>
+
+      <!-- Product List -->
+      <div class="product-grid" id="productList">
+        <div class="product-card fruits">
+          <img src="download (1).jpg" alt="Organic Apples">
+          <img src="download (3).jpg" alt="organic apples">
+          <h4>Organic Apples</h4>
+          <p>Sweet and juicy, pesticide-free.</p>
+        </div>
+        <div class="product-card vegetables">
+          <img src="download (17).jpg" alt="Spinach">
+          <img src="download (18).jpg" alt="Spinach">
+          <h4>Fresh Spinach</h4>
+          <p>Leafy green full of nutrients.</p>
+        </div>
+        <div class="product-card dairy">
+          <img src="download (15).jpg" alt="Dairy Milk">
+          <img src="download (16).jpg" alt="dairy milk">
+          <h4>Dairy Milk</h4>
+          <p>Fresh from local farms.</p>
+        </div>
+        <div class="product-card fruits">
+          <img src="download (21).jpg" alt="Bananas">
+          <img src="download (22).jpg" alt="banana">
+          <h4>Organic Bananas</h4>
+          <p>Ripe and naturally sweet.</p>
+        </div>
+        <div class="product-card dairy">
+          <img src="download (23).jpg" alt="Cheese">
+          <img src="download (24).jpg" alt="Cheese">
+          <h4>Natural Cheese</h4>
+          <p>Rich and creamy flavor.</p>
+        </div>
+        <div class="product-card vegetables">
+          <img src="download (20).jpg" alt="Carrots">
+          <img src="download (19).jpg" alt="carrots">
+          <h4>Organic Carrots</h4>
+          <p>Crunchy and full of beta-carotene.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function filterProducts(category) {
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+   <h1>THIS IS VEGETABLES</h1>
+        <p>This is A-Z vegetabes is comprehensive guide full of infomation on auide range of vegetabes</p>
+        <p>from the common to the lesser-know varietiess this guide cover every thinge from nutrient</p>
+        <p>in each vegetable to om to sellect store and prapare them</p>
+        <p>this guide whether youre aseason chef or aovice cook, this guide is valuable reasouce</p>
+        <p>for any one looking to incoraprate vegetabes.</p>
         <img src="OIP (4).jpg" alt="" style="width: 250px;height: 250px;">
         <img src="OIP (5).jpg" alt="" style="width: 250px;height: 250px;">
         <img src="download (10).jpg" alt="" style="width: 250px;height: 250px;">
         <img src="download (8).jpg" alt="" style="height: 250px;width: 250px;">
         <img src="download (9).jpg" alt="" style="width: 250px;height: 250px;">
-        <div class="row bg-warning" style="margin-top: 30px;margin-left: 20px;margin-right: 20px;">
+<h2>This fruit</h2>
+        <h6>Farm-to-table produce natural product,and more</h6>
+        <h6>Fruit are crucial fro aheath lifestyle offring wide range of benefit from boosting the immune system </h6>
+        <h6>to aidind digestion and reducing therisk of desiases</h6>
+        <img src="foods-that-start-with-a-z-768x576.jpg" alt="" style="height: 250px;width: 250px;">
+        <img src="download (12).jpg" alt="" style="height: 250px;width: 250px;">
+        <img src="download (11).jpg" alt="" style="width: 300px;width: 300px;">
+        <img src="download (13).jpg" alt="" style="width: 250px;width: 250px;">
+        <img src="download (14).jpg" alt="" style="width: 250px;width: 250px;"> 
+      <div class="row bg-warning" style="margin-top: 30px;margin-left: 20px;margin-right: 20px;">
             <div class="col-lg-4">
                 <h1>About as</h1>
                 <p>we are dedicated to provide exption</p>
