@@ -11,123 +11,166 @@
 </head>
 
 <body>
-    <link rel="stylesheet" href="about as.html">
-    <nav class="navbar bg-white navbar expand-ms">
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="home.html" class="nav-link" text-primary>Home</a>
-            </li>
-            <li class="nav-item">
-
-                <a href="product.html" class="nav-link">product</a>
-            </li>
-            <li class="nav-item">
-                <a href="about as.html" class="nav-link">About as</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">contact</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="row" style="background-color: greenyellow;">
-        <div class="col-lg-6">
-            <i>
-                <h2> This infomation</h2>
-            </i>
-            <label for=""> User name</label>
-            <input type="text"><br><br>
-            <label for="">Telphone</label>
-            <input type="number"><br><br>
-            <label>Email</label>
-            <input type="email"><br><br>
-            <button class="btn btn-30 bg-primary">Send data</button>
-            </form>
-            <script>
-                function validateForm() {
-                    const name = document.getElementById("name").value.trim();
-                    const email = document.getElementById("email").value.trim();
-                    const message = document.getElementById("message").value.trim();
-
-                    if (!name || !email || !message) {
-                        alert("Please fill out all fields.");
-                        return false;
-                    }
-
-                    if (!email.includes("@")) {
-                        alert("Enter a valid email address.");
-                        return false;
-                    }
-
-                    return true;
-                }
-            </script>
-
-
-        </div><br><br>
-        <div class="col-lg-6">
-            <Marquee>
-                <h1><i><u> Rules of time work shop</u></i></h1>
-            </Marquee>
-
-            <h1>This is time of work shop</h1>
-            <table border="1">
-                <tr>
-                    <th>work</th>
-                    <th>time</th>
-                </tr>
-                <tr>
-                    <td> cleaning</td>
-                    <td>6:00-7:00 A.M</td>
-                </tr>
-                <TD>Work </TD>
-                <td>7:00-12:00A.M</td>
-                </tr>
-                <tr>
-                    <td>luanch</td>
-                    <td>12:00-13:00pm</td>
-                </tr>
-                <tr>
-                    <TD>Work</TD>
-                    <td>13:00-17:00pm</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="row bg-warning" style="margin-top: 30px;margin-left: 20px;">
-        <div class="col-lg-4">
-            <h1>About as</h1>
-            <p>we are dedicated to provide exption</p>
-            <p>and product to our cliet worl wide</p>
-
-        </div>
-
-        <div class="col-lg-4">
-            <h2>quick of link</h2>
-            <ul>
-                <li>
-                    <a href="home" class="nav-link" text-primary>Home</a>
+    
+        <link rel="stylesheet" href="about as.html">
+        <nav class="navbar bg-white navbar expand-ms">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link" text-primary>Home</a>
                 </li>
                 <li class="nav-item">
 
-                    <a href="product" class="nav-link">product</a>
+                    <a href="product.html" class="nav-link">product</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="about as.html" class="nav-link">About as</a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="contact.html" class="nav-link">contact</a>
                 </li>
             </ul>
-        </div>
-        <div class="col-lg-4">
-            <h2>contact information</h2>
-            <p>District:Gatsibo</p>
-            <p>Sector:Kiramuruzi</p>
-            <p>email:kevine tuyishimire77@gmail.com</p>
-            <p>tell:(+250)786523730</p>
+        </nav>
+<div style="background-color: salmon;margin-left: 20px;margin-right: 15px;">
+<div class="row" style=|"margin-left: 20px;margin-right: 15px;">
+    <div class="col-lg-3">
+        <main>
+            <section class="about-intro">
+                <h2>About Agape Market</h2>
+                <p>Agape Market is a local organic grocery store dedicated to providing fresh, farm-to-table produce and
+                    eco-friendly household products. We believe in healthy living, sustainability, and supporting local
+                    farmers.</p>
+            </section>
+            </div>
+<div class="col-lg-3">
+            <section class="mission-values">
+                <h3>Our Mission</h3>
+                <p>To make healthy, organic food accessible to everyone while supporting local agriculture and
+                    protecting
+                    our environment.</p>
+                </div>
+                <div class="col-lg-3">
+
+                <h3>Our Values</h3>
+                <ul>
+                    <li>🌱 Sustainability</li>
+                    <li>💚 Community Support</li>
+                    <li>🛒 Quality & Freshness</li>
+                    <li>🤝 Fair Trade Practices</li>
+                </ul>
+            </section>
+                </div>
+                <div class="col-lg-3">
+            <section class="store-location">
+                <h3>Store Location</h3>
+                <p>We are located in the heart of Kigali, close to local farms and communities. Come visit us for a
+                    truly
+                    organic experience!</p>
+                <img src="download (4).jpg" alt="Agape Market Storefront" class="responsive-image" />
+            </section>
+        </main></div>
+</div>
+
+        <div class="row" style="background-color:"margin-top: 30px;margin-left:20px ;margin-right: 15px;">
+            <div class="col-lg-6">
+                <h1>Create new account</h1>
+                <i>
+                    <h2> This infomation</h2>
+                </i>
+                <label for=""> User name</label>
+                <input type="text" required><br><br>
+                <label for="">Telphone</label>
+                <input type="number" required><br><br>
+                <label>Email</label>
+                <input type="email" required><br><br>
+                <button class="btn btn-30 bg-primary">Send data</button>
+                </form>
+                <script>
+                    function validateForm() {
+                        const name = document.getElementById("name").value.trim();
+                        const email = document.getElementById("email").value.trim();
+                        const message = document.getElementById("message").value.trim();
+
+                        if (!name || !email || !message) {
+                            alert("Please fill out all fields.");
+                            return false;
+                        }
+
+                        if (!email.includes("@")) {
+                            alert("Enter a valid email address.");
+                            return false;
+                        }
+
+                        return true;
+                    }
+                </script>
 
 
+            </div><br><br>
+            <div class="col-lg-6">
+                <Marquee>
+                    <h1><i><u> Rules of time work shop</u></i></h1>
+                </Marquee>
+
+                <h1>This is time of work shop</h1>
+                <table border="1">
+                    <tr>
+                        <th>work</th>
+                        <th>time</th>
+                    </tr>
+                    <tr>
+                        <td> cleaning</td>
+                        <td>6:00-7:00 A.M</td>
+                    </tr>
+                    <TD>Work </TD>
+                    <td>7:00-12:00A.M</td>
+                    </tr>
+                    <tr>
+                        <td>luanch</td>
+                        <td>12:00-13:00pm</td>
+                    </tr>
+                    <tr>
+                        <TD>Work</TD>
+                        <td>13:00-17:00pm</td>
+                    </tr>
+                </table>
+            </div>
         </div>
+    
+        <div class="row bg-warning style=" margin-top: 30px;margin-left: 20px;">
+            <div class="col-lg-4">
+                <h1>About as</h1>
+                <p>we are dedicated to provide exption</p>
+                <p>and product to our cliet worl wide</p>
+
+            </div>
+
+            <div class="col-lg-4">
+                <h2>quick of link</h2>
+                <ul>
+                    <li>
+                        <a href="home" class="nav-link" text-primary>Home</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="product" class="nav-link">product</a>
+                    </li>
+                    <li>
+                        <a href="about as.html" class="nav-link">About as</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h2>contact information</h2>
+                <p>District:Gatsibo</p>
+                <p>Sector:Kiramuruzi</p>
+                <p>email:kevine tuyishimire77@gmail.com</p>
+                <p>tell:(+250)786523730</p>
+
+
+            </div>
 
 </body>
 
