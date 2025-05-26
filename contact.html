@@ -2,122 +2,120 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rer="stylesheet" href="home.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rer="stylesheet" href="home.html">
 </head>
 
 <body>
 
-    <link rel="stylesheet" href="contact.html">
-    <nav class="navbar bg-w:hite navbar expand-ms">
-        <link rel="stylesheet" href="home.html">
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="home.html" class="nav-link" text-primary>Home</a>
-            </li>
-            <li class="nav-item">
+  <link rel="stylesheet" href="contact.html">
+  <nav class="navbar bg-w:hite navbar expand-ms">
+    <link rel="stylesheet" href="home.html">
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="home.html" class="nav-link" text-primary>Home</a>
+      </li>
+      <li class="nav-item">
 
-                <a href="product.html" class="nav-link">product</a>
-            </li>
-            <li class="nav-item">
-                <a href="about as.html" class="nav-link">About as</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">contact</a>
-            </li>
-        </ul>
-    </nav>
-    <div style="background-color: chartreuse;margin-left: 20px;margin-right: 15px;">
-          <main>
-    <section class="contact-section">
-      <h2>Contact Us</h2>
-<h4>Creat new acount</h4>
-      <div class="contact-form-container">
-        <form id="contactForm">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required /><br>
+        <a href="product.html" class="nav-link">product</a>
+      </li>
+      <li class="nav-item">
+        <a href="about as.html" class="nav-link">About as</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div style="background-color: chartreuse;margin-left: 20px;margin-right: 15px;">
+    <main>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <h4>Creat new acount</h4>
+        <div class="contact-form-container">
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /><br>
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea><br>
-          <button type="submit">Send Message</button>
-        </form>
-        <div id="formMessage"></div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea><br>
+            <button type="submit" onclick="validateForm()">Send Message</button>
+          </form>
+          <div id="formMessage"></div>
+        </div>
+
+        <div class="store-info">
+          <h3>Store Hours</h3>
+          <p>Monday - Saturday: 8:00 AM - 7:00 PM</p>
+          <p>Sunday: Closed</p>
+
+          <h3>Location</h3>
+          <iframe src="download (4).jpg" width="3000px" height="290px" style="border:0;" allowfullscreen=""
+            loading="lazy"></iframe>
+        </div>
+      </section>
+    </main>
+    <script>
+      function validateForm() {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (!name || !email || !message) {
+          alert("Please fill out all fields.");
+          return false;
+        }
+
+        if (!email.includes("@")) {
+          alert("Enter a valid email address.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+    <div class="row bg-warning" style="margin-top: 30px;margin-left: 20px;">
+      <div class="col-lg-4">
+        <h1>About as</h1>
+        <p>we are dedicated to provide exption</p>
+        <p>and product to our cliet worl wide</p>
+
       </div>
 
-      <div class="store-info">
-        <h3>Store Hours</h3>
-        <p>Monday - Saturday: 8:00 AM - 7:00 PM</p>
-        <p>Sunday: Closed</p>
-
-        <h3>Location</h3>
-        <iframe
-          src="download (4).jpg" 
-          width="3000px" height="290px" style="border:0;" allowfullscreen="" loading="lazy"
-        ></iframe>
-      </div>
-    </section>
-  </main>
-        <script>
-  function validateForm() {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    if (!name || !email || !message) {
-      alert("Please fill out all fields.");
-      return false;
-    }
-
-    if (!email.includes("@")) {
-      alert("Enter a valid email address.");
-      return false;
-    }
-
-    return true;
-  }
-</script>
-        <div class="row bg-warning" style="margin-top: 30px;margin-left: 20px;">
-            <div class="col-lg-4">
-                <h1>About as</h1>
-                <p>we are dedicated to provide exption</p>
-                <p>and product to our cliet worl wide</p>
-
-            </div>
-
-            <div class="col-lg-4>
+      <div class="col-lg-4>
                 <h2>quick of link</h2>
                 <ul>
                     <li>
-                        <a href="home" class="nav-link" text-primary>Home</a>
-                </li>
-                <li class="nav-item">
+                        <a href=" home" class="nav-link" text-primary>Home</a>
+        </li>
+        <li class="nav-item">
 
-                    <a href="product" class="nav-link">product</a>
-                </li>
-                <li>
-                    <a href="about as" class="nav-link">About as</a>
-                </li>
-                <li>
-                    <a href="contact" class="nav-link">contact</a>
-                </li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <h2>Contact information</h2>
-                <p>District:Gatsibo</p>
-                <p>Sector:Kiramuruzi</p>
-                <p>email:kevine tuyishimire77@gmail.com</p>
-                <p>tell:(+250)786523730</p>
+          <a href="product" class="nav-link">product</a>
+        </li>
+        <li>
+          <a href="about as" class="nav-link">About as</a>
+        </li>
+        <li>
+          <a href="contact" class="nav-link">contact</a>
+        </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h2>Contact information</h2>
+        <p>District:Gatsibo</p>
+        <p>Sector:Kiramuruzi</p>
+        <p>email:kevine tuyishimire77@gmail.com</p>
+        <p>tell:(+250)786523730</p>
 
 
-            </div>
+      </div>
 
 
 </body>
